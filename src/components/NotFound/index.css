@@ -1,0 +1,48 @@
+.not-found-container {
+  background-color: #202020;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-title {
+  color: white;
+  font-size: 23px;
+  margin: 10px;
+}
+
+.not-found-paragraph {
+  color: white;
+  font-size: 18px;
+}
+
+.not-found-md-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-sm-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .not-found-md-container {
+    display: none;
+  }
+  .not-found-title {
+    font-size: 18px;
+  }
+  .not-found-paragraph {
+    font-size: 10px;
+    margin: 15px;
+  }
+  .not-found-image {
+    height: 200px;
+    margin: 15px;
+  }
+}

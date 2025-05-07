@@ -1,0 +1,72 @@
+.loginForm-container {
+  background-color: #121212;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.login-image {
+  height: 40px;
+  margin: 20px;
+  margin-bottom: 15px;
+}
+
+.login-form-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #2c364c;
+  margin: 10px;
+  height: 350px;
+  width: 400px;
+}
+
+.login-button {
+  margin-top: 20px;
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 70px;
+  font-size: 15px;
+  color: white;
+  background-color: #6366f1;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.password-input-field {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 10px;
+  width: 250px;
+  font-size: 10px;
+}
+.label-heading {
+  font-size: 12px;
+  color: white;
+  margin: 5px;
+  font-family: 'roboto';
+}
+
+.error-paragraph {
+  color: red;
+  font-size: 10px;
+  font-family: 'Roboto';
+  align-self: flex-start;
+}
+
+.username-input-field {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 10px;
+  width: 250px;
+  font-size: 10px;
+
+  background-color: #f8fafc;
+}
