@@ -39,6 +39,14 @@ class AllJobDetails extends Component {
       console.log(data)
     }
   }
+
+  render() {
+    return (
+      <div>
+        <center>Namaste</center>
+      </div>
+    )
+  }
 }
 
 export default AllJobDetails

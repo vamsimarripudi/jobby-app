@@ -37,6 +37,9 @@
     font-size: 13px;
     width: 300px;
   }
+  .jobs-home-page-container {
+    height: 45vh;
+  }
 
   .nav-md-card-container {
     display: none;

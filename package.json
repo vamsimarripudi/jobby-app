@@ -1,9 +1,9 @@
 {
   "name": "jobby-app",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.0",
   "engines": {
-    "node": "18.x",
+    "node": "*",
     "npm": ">=6"
   },
   "dependencies": {
