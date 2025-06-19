@@ -1,4 +1,5 @@
 import Header from '../Header'
+<<<<<<< HEAD
 import AllJobsDetails from '../AllJobDetails'
 import './index.css'
 
@@ -14,3 +15,6 @@ const Jobs = () => (
 )
 
 export default Jobs
+=======
+import 'index.css'
+>>>>>>> ea3680e4cef7e9838e3376b71ff514c19f64aafc
