@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+.job-card-container {
+  background-color: #2c364c;
+  padding: 10px;
+  height: 300px;
+  width: 700px;
+  color: white;
+  border-radius: 10px;
+}
+.second-line-top-container {
+  display: flex;
+}
+.second-line-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.first-line-bottom-container {
+  display: flex;
+}
+
+.first-line-container {
+  display: flex;
+}
+
+.logo-image {
+  height: 50px;
+  margin: 10px;
+}
