@@ -1,6 +1,6 @@
 .job-list {
   margin: 10px;
-  width: auto;
+  width: 100%;
 }
 
 .job-card-container {
@@ -9,4 +9,9 @@
 
 .linked-toggle {
   text-decoration: none;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
 }

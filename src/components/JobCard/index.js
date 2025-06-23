@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom'
 import {FaStar} from 'react-icons/fa'
 import {MdLocationOn} from 'react-icons/md'
+import {RiSuitcaseLine} from 'react-icons/ri'
 
 import './index.css'
 
@@ -22,26 +23,26 @@ const JobCard = props => {
         <div className="job-card-container">
           <div className="first-line-container">
             <img src={companyLogoUrl} className="logo-image" alt={title} />
-            <div>
-              <h1>{title}</h1>
+            <div className="crd-top">
+              <h1 className="job-title">{title}</h1>
               <div className="first-line-bottom-container">
-                <FaStar size="10" />
-                <p>{rating}</p>
+                <FaStar color="orange" size="15" />
+                <p className="rating-para">{rating}</p>
               </div>
             </div>
           </div>
           <div className="second-line-container">
             <div className="second-line-top-container">
-              <MdLocationOn size="10" />
-              <p>{location}</p>
-
-              <p>{employmentType}</p>
+              <MdLocationOn size="18" />
+              <p className="para-location">{location}</p>
+              <RiSuitcaseLine font-size="bold" size="18" />
+              <p className="employment-para">{employmentType}</p>
             </div>
             <p>{packagePerAnnum}</p>
           </div>
           <hr className="hr-1" />
-          <p>Description</p>
-          <p>{jobDescription}</p>
+          <p className="card-description">Description</p>
+          <p className="paragraph">{jobDescription}</p>
         </div>
       </Link>
     </li>

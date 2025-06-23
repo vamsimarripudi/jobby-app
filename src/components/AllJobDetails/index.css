@@ -5,9 +5,35 @@
 
 .job-details-card {
   display: flex;
+  flex-direction: row;
   padding-left: 50px;
   background-color: black;
-  height: 100vh;
+  height: 110vh;
+}
+
+.search-input {
+  padding: 7px;
+  background-color: transparent;
+  color: white;
+  font-family: 'Roboto';
+  width: 300px;
+  height: 38px;
+  border-width: 1px;
+  margin-left: 25px;
+}
+
+.search-icon {
+  padding: 7px;
+  background-color: transparent;
+  color: white;
+  border-width: 1px;
+}
+.search-input-card {
+  display: flex;
+  align-items: center;
+}
+.sm-search-input {
+  display: none;
 }
 
 .hr-element {
@@ -16,16 +42,26 @@
   margin: 15px;
 }
 .profile-card-container {
-  height: 200px;
-  width: 270px;
+  height: 170px;
+  width: 230px;
   background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
   background-size: cover;
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .profile-card {
   width: 25%;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-heading {
@@ -60,8 +96,75 @@
   color: white;
 }
 
+.salary-card-container {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 270px;
+  background-color: black;
+  color: white;
+}
+
 .joblist-card {
   height: 100vh;
   overflow: auto;
-  width: 75%;
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .search-input-card {
+    order: 1;
+  }
+  .search-input {
+    width: 170px;
+    height: 25px;
+  }
+  .profile-card-container {
+    height: 130px;
+  }
+  .search-icon {
+    padding: 4px;
+  }
+  .employment-card-container {
+    height: 150px;
+  }
+  label {
+    font-size: 10px;
+  }
+  .logo-image {
+    height: 20px;
+  }
+  .job-details-card {
+    flex-direction: column;
+    height: 150vh;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .paragraph {
+    font-size: 12px;
+  }
+  .joblist-card {
+    height: 300px;
+  }
+
+  .job-title {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+  .profile-logo {
+    height: 20px;
+  }
+  .profile-heading {
+    font-size: 15px;
+  }
+  .profile-short-bio {
+    font-size: 10px;
+  }
+  .lg-search-input {
+    display: none;
+  }
 }

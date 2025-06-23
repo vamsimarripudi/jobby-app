@@ -6,12 +6,13 @@
   background-color: #2c364c;
   padding: 10px;
   height: 300px;
-  width: 700px;
+  width: 100%;
   color: white;
   border-radius: 10px;
 }
 .second-line-top-container {
   display: flex;
+  align-items: center;
 }
 .second-line-container {
   display: flex;
@@ -20,6 +21,10 @@
 }
 .first-line-bottom-container {
   display: flex;
+  align-items: center;
+}
+.employment-para {
+  margin: 10px;
 }
 
 .first-line-container {
@@ -28,5 +33,21 @@
 
 .logo-image {
   height: 50px;
+  margin: 10px;
+}
+
+.rating-para {
+  margin-left: 10px;
+}
+
+.para-location {
+  margin: 10px;
+}
+
+.card-description {
+  margin: 10px;
+}
+
+.paragraph {
   margin: 10px;
 }

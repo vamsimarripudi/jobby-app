@@ -27,9 +27,15 @@ const Header = props => {
           </Link>
         </div>
         <div className="icons-manage">
-          <FaHome size="20" className="i" />
-          <BsFillEnvelopeFill size="20" className="i" />
-          <RiLogoutBoxRLine size="20" onClick={onClickLogOut} className="i" />
+          <Link to="/" className="link-home-element">
+            <FaHome size="20" className="i" />
+          </Link>
+          <Link to="/jobs">
+            <BsFillEnvelopeFill size="20" className="i" />
+          </Link>
+          <Link to="/login">
+            <RiLogoutBoxRLine size="20" onClick={onClickLogOut} className="i" />
+          </Link>
         </div>
       </div>
       <div className="nav-md-card-container">
