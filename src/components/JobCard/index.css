@@ -1,0 +1,12 @@
+.job-list {
+  margin: 10px;
+  width: auto;
+}
+
+.job-card-container {
+  width: 100%;
+}
+
+.linked-toggle {
+  text-decoration: none;
+}

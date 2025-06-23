@@ -6,8 +6,6 @@ const Jobs = () => (
   <>
     <Header />
     <div>
-      <center>Welcome to Jobs Page</center>
-      <center>Here You will find jobs.</center>
       <AllJobsDetails />
     </div>
   </>

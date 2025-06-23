@@ -44,7 +44,11 @@ const Header = props => {
           <Link to="/" className="link-home-element">
             Home
           </Link>
-          <h4 className="link-home-element">Jobs</h4>
+          <h4 className="link-home-element">
+            <Link to="/jobs" className="link-home-element">
+              Jobs
+            </Link>
+          </h4>
         </div>
         <div>
           <button type="button" onClick={onClickLogOut} className="nav-button">

@@ -17,8 +17,8 @@ const JobCard = props => {
     packagePerAnnum,
   } = jobCardDetails
   return (
-    <li>
-      <Link to={`/jobs/${id}`}>
+    <li className="job-list">
+      <Link to={`/jobs/${id}`} className="linked-toggle">
         <div className="job-card-container">
           <div className="first-line-container">
             <img src={companyLogoUrl} className="logo-image" alt={title} />
