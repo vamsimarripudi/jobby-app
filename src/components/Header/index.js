@@ -47,14 +47,20 @@ const Header = props => {
           />
         </div>
         <div className="icons-manage">
-          <Link to="/" className="link-home-element">
-            Home
-          </Link>
-          <h4 className="link-home-element">
-            <Link to="/jobs" className="link-home-element">
-              Jobs
-            </Link>
-          </h4>
+          <ul>
+            <li>
+              <Link to="/" className="link-home-element">
+                Home
+              </Link>
+            </li>
+            <li>
+              <h4 className="link-home-element">
+                <Link to="/jobs" className="link-home-element">
+                  Jobs
+                </Link>
+              </h4>
+            </li>
+          </ul>
         </div>
         <div>
           <button type="button" onClick={onClickLogOut} className="nav-button">

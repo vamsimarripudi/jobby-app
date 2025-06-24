@@ -57,7 +57,7 @@ class AllJobDetails extends Component {
     const response = await fetch(apiUrl, options)
     if (response.ok === true) {
       const data = await response.json()
-      console.log(data)
+
       const updatedStatus = {
         name: data.profile_details.name,
         profileImageUrl: data.profile_details.profile_image_url,
@@ -88,7 +88,6 @@ class AllJobDetails extends Component {
 
     if (response.ok === true) {
       const fetchedJobDetails = await response.json()
-      console.log(fetchedJobDetails)
 
       const updatedJobDetails = fetchedJobDetails.jobs.map(eachJob => ({
         id: eachJob.id,
@@ -100,7 +99,6 @@ class AllJobDetails extends Component {
         rating: eachJob.rating,
         title: eachJob.title,
       }))
-      console.log(updatedJobDetails)
 
       this.setState({
         jobsList: updatedJobDetails,
@@ -118,7 +116,11 @@ class AllJobDetails extends Component {
     return (
       <div className="profile-card-container">
         <div>
-          <img className="profile-logo" src={profileImageUrl} alt={name} />
+          <img
+            className="profile-logo"
+            src={profileImageUrl}
+            alt="profile_image_url"
+          />
           <h1 className="profile-heading">{name}</h1>
           <p className="profile-short-bio">{shortBio}</p>
         </div>
@@ -128,7 +130,7 @@ class AllJobDetails extends Component {
 
   renderEmploymentTypeView = () => (
     <div className="employment-card-container">
-      <p className="employment-type-para">Type of Employment</p>
+      <h1 className="employment-type-para">Type of Employment</h1>
       <ul className="employment-type-list">
         {employmentTypesList.map(each => (
           <li key={each.employmentTypeId}>
@@ -147,7 +149,7 @@ class AllJobDetails extends Component {
 
   renderSalaryTypeView = () => (
     <div className="salary-card-container">
-      <p className="employment-type-para">Salary Range</p>
+      <h1 className="employment-type-para">Salary Range</h1>
       <ul className="employment-type-list">
         {salaryRangesList.map(each => (
           <li key={each.salaryRangeId}>
@@ -316,6 +318,7 @@ class AllJobDetails extends Component {
       <div className="job-details-card">
         <div className="profile-card">
           <div className="sm-search-input">{this.onSearchInput()}</div>
+          <hr className="hr-element" />
           {this.onRenderProfile()}
           <hr className="hr-element" />
           {this.renderEmploymentTypeView()}

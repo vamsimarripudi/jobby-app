@@ -22,7 +22,11 @@ const JobCard = props => {
       <Link to={`/jobs/${id}`} className="linked-toggle">
         <div className="job-card-container">
           <div className="first-line-container">
-            <img src={companyLogoUrl} className="logo-image" alt={title} />
+            <img
+              src={companyLogoUrl}
+              className="logo-image"
+              alt="company logo"
+            />
             <div className="crd-top">
               <h1 className="job-title">{title}</h1>
               <div className="first-line-bottom-container">
@@ -41,7 +45,7 @@ const JobCard = props => {
             <p>{packagePerAnnum}</p>
           </div>
           <hr className="hr-1" />
-          <p className="card-description">Description</p>
+          <h1 className="card-description">Description</h1>
           <p className="paragraph">{jobDescription}</p>
         </div>
       </Link>

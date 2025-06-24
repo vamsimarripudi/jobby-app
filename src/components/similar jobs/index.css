@@ -1,0 +1,23 @@
+.similar-job-card {
+  height: auto;
+  width: 20%;
+  background-color: #202020;
+
+  margin: 10px;
+  padding: 20px;
+}
+
+.similar-job-top-card {
+  display: flex;
+  align-items: center;
+}
+
+.location-card-middle {
+  display: flex;
+  margin-left: 10px;
+}
+.description-sm {
+  font-size: 12px;
+  color: #ffffff;
+  font-family: 'Roboto';
+}
