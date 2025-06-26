@@ -27,15 +27,27 @@ const Header = props => {
           </Link>
         </div>
         <div className="icons-manage">
-          <Link to="/" className="link-home-element">
-            <FaHome size="20" className="i" />
-          </Link>
-          <Link to="/jobs">
-            <BsFillEnvelopeFill size="20" className="i" />
-          </Link>
-          <Link to="/login">
-            <RiLogoutBoxRLine size="20" onClick={onClickLogOut} className="i" />
-          </Link>
+          <ul className="unOrdered-list-nav-icons-card">
+            <li>
+              <Link to="/" className="link-home-element">
+                <FaHome size="20" className="i" />
+              </Link>
+            </li>
+            <li>
+              <Link to="/jobs">
+                <BsFillEnvelopeFill size="20" className="i" />
+              </Link>
+            </li>
+            <li>
+              <Link to="/login">
+                <RiLogoutBoxRLine
+                  size="20"
+                  onClick={onClickLogOut}
+                  className="i"
+                />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="nav-md-card-container">
@@ -47,7 +59,7 @@ const Header = props => {
           />
         </div>
         <div className="icons-manage">
-          <ul>
+          <ul className="unOrder-nav-list">
             <li>
               <Link to="/" className="link-home-element">
                 Home

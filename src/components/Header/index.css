@@ -5,6 +5,15 @@
   height: 70px;
 }
 
+.unOrder-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.unOrdered-list-nav-icons-card {
+  display: flex;
+  align-items: center;
+}
 * {
   margin: 0px;
   box-sizing: border-box;

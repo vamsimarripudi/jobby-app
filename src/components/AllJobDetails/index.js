@@ -298,7 +298,7 @@ class AllJobDetails extends Component {
     }
   }
 
-  onRenderjobView = () => {
+  onRenderJobView = () => {
     const {apiJobStatus} = this.state
 
     switch (apiJobStatus) {
@@ -327,7 +327,7 @@ class AllJobDetails extends Component {
         </div>
         <div>
           <div className="lg-search-input">{this.onSearchInput()}</div>
-          {this.onRenderjobView()}
+          {this.onRenderJobView()}
         </div>
       </div>
     )

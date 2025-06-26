@@ -51,6 +51,16 @@ class JobsSection extends Component {
     name: data.name,
   })
 
+  getSimilarJobsData = data => ({
+    id: data.id,
+    companyLogoUrl: data.company_logo_url,
+    jobDescription: data.job_description,
+    employmentType: data.employment_type,
+    location: data.location,
+    rating: data.rating,
+    title: data.title,
+  })
+
   getJobsDetails = async () => {
     const {match} = this.props
     const {params} = match
@@ -80,7 +90,7 @@ class JobsSection extends Component {
         this.getSkillData(each),
       )
       const updatedSimilarJob = data.similar_jobs.map(eachJob =>
-        this.getFormattedData(eachJob),
+        this.getSimilarJobsData(eachJob),
       )
 
       this.setState({
@@ -100,6 +110,10 @@ class JobsSection extends Component {
       <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
     </div>
   )
+
+  onResetButton = () => {
+    this.getJobsDetails()
+  }
 
   renderFailureView = () => (
     <div className="failure-card">
@@ -121,8 +135,6 @@ class JobsSection extends Component {
       </button>
     </div>
   )
-
-  onResetButton = () => this.getJobDetails()
 
   renderSuccessJobDetailsView = () => {
     const {jobData, similarJobs, lifeAtCompany, skills} = this.state
@@ -172,7 +184,7 @@ class JobsSection extends Component {
           </div>
           <hr className="hr-bar" />
           <div className="job-middle-section-top-card">
-            <p className="description-para">Description</p>
+            <h1 className="description-para">Description</h1>
             <a className="anchor-tag" href={companyWebsiteUrl}>
               Visit <BsBoxArrowUpRight size="13" />
             </a>
@@ -191,17 +203,21 @@ class JobsSection extends Component {
               </li>
             ))}
           </ul>
-          <h1 className="company-heading">Life At Company</h1>
+          <h1 className="company-heading">Life qt Company</h1>
           <div className="life-at-company-card">
             <p className="company-para">{description}</p>
-            <img className="company-image" src={companyImageUrl} alt={title} />
+            <img
+              className="company-image"
+              src={companyImageUrl}
+              alt="life at company"
+            />
           </div>
         </div>
         <div className="similar-card-section-area">
           <h1 className="company-head">Similar Jobs</h1>
           <ul className="unOrdered-list">
             {similarJobs.map(eachJob => (
-              <SimilarJobs similarJobs={eachJob} />
+              <SimilarJobs similarJobs={eachJob} key={eachJob.id} />
             ))}
           </ul>
         </div>
