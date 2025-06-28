@@ -39,7 +39,7 @@ const JobCard = props => {
             <div className="second-line-top-container">
               <MdLocationOn size="18" />
               <p className="para-location">{location}</p>
-              <RiSuitcaseLine font-size="bold" size="18" />
+              <RiSuitcaseLine size="18" />
               <p className="employment-para">{employmentType}</p>
             </div>
             <p>{packagePerAnnum}</p>
