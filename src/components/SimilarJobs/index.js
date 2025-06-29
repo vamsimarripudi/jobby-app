@@ -1,4 +1,4 @@
-import {BsSuitcase} from 'react-icons/bs'
+import {RiSuitcaseLine} from 'react-icons/ri'
 import {IoLocationOutline, IoStar} from 'react-icons/io5'
 
 import './index.css'
@@ -26,7 +26,7 @@ const SimilarJobs = props => {
           <div className="job-card-middle">
             <h1 className="company-title">{title}</h1>
             <div className="location-card-middle">
-              <IoStar color="orange" size="15" />
+              <IoStar className="job-rating-icon" color="orange" size="15" />
               <p className="job-card-rating">{rating}</p>
             </div>
           </div>
@@ -37,14 +37,10 @@ const SimilarJobs = props => {
         </div>
         <div>
           <div className="job-middle-start">
-            <div className="location-card-container">
-              <IoLocationOutline size="20" color="#f1f5f9" />
-              <p className="location-title">{location}</p>
-            </div>
-            <div className="location-card-container">
-              <BsSuitcase size="20" color="#f1f5f9" />
-              <p className="location-title">{employmentType}</p>
-            </div>
+            <IoLocationOutline size="20" color="#f1f5f9" />
+            <p className="location-title">{location}</p>
+            <RiSuitcaseLine size="20" color="#f1f5f9" />
+            <p className="location-title">{employmentType}</p>
           </div>
         </div>
       </div>

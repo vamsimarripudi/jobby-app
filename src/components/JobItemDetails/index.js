@@ -3,7 +3,7 @@ import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 import {FaStar} from 'react-icons/fa'
 import {MdLocationOn} from 'react-icons/md'
-import {PiSuitcaseSimpleLight} from 'react-icons/pi'
+import {RiSuitcaseLine} from 'react-icons/ri'
 import {BsBoxArrowUpRight} from 'react-icons/bs'
 import SimilarJobs from '../SimilarJobs'
 import Header from '../Header'
@@ -140,7 +140,7 @@ class JobItemDetails extends Component {
               <div className="employment-card">
                 <MdLocationOn className="location-icon" />
                 <p className="location-type">{location}</p>
-                <PiSuitcaseSimpleLight className="location-icon" />
+                <RiSuitcaseLine className="location-icon" />
                 <p className="employment-type">{employmentType}</p>
               </div>
               <div>
@@ -175,7 +175,11 @@ class JobItemDetails extends Component {
               <p className="life-at-company-paragraph">
                 {lifeAtCompany.description}
               </p>
-              <img src={lifeAtCompany.imageUrl} alt="life at company" />
+              <img
+                className="life-at-company-image"
+                src={lifeAtCompany.imageUrl}
+                alt="life at company"
+              />
             </div>
           </div>
           <h1 className="similar-job-heading">Similar Jobs</h1>

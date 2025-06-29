@@ -62,6 +62,18 @@ p {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .job-details-page-card {
+    height: auto;
+    padding: 10px;
+  }
+  .life-at-company-image {
+    order: 1;
+  }
+  .skills-unordered-list {
+    flex-wrap: wrap;
+  }
+}
 
 .location-icon {
   font-size: 20px;
