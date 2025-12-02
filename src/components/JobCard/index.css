@@ -1,6 +1,9 @@
 .job-list {
-  margin: 10px;
+  margin: 5px;
   width: 100%;
+  min-height: 130px;
+
+  padding: 10px;
 }
 
 .job-card-container {
@@ -13,5 +16,17 @@
 
 .card-top {
   display: flex;
+  align-items: center;
+}
+
+.paragraph {
+  width: auto;
+}
+
+.second-line-container {
+  align-items: center;
+}
+
+.first-line-container {
   align-items: center;
 }

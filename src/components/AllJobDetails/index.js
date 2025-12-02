@@ -318,7 +318,6 @@ class AllJobDetails extends Component {
       <div className="job-details-card">
         <div className="profile-card">
           <div className="sm-search-input">{this.onSearchInput()}</div>
-          <hr className="hr-element" />
           {this.onRenderProfile()}
           <hr className="hr-element" />
           {this.renderEmploymentTypeView()}

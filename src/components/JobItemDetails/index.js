@@ -183,7 +183,7 @@ class JobItemDetails extends Component {
             </div>
           </div>
           <h1 className="similar-job-heading">Similar Jobs</h1>
-          <ul className="skills-unordered-list">
+          <ul className="similar-unordered-list">
             {similarJobsData.map(eachJobItem => (
               <SimilarJobs key={eachJobItem.id} similarJobs={eachJobItem} />
             ))}

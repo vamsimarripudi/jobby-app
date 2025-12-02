@@ -94,17 +94,22 @@ class Login extends Component {
     return (
       <div className="loginForm-container">
         <form className="login-form-element" onSubmit={this.onSubmitForm}>
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-            alt="website logo"
-            className="login-image"
-          />
-          <div>{this.renderUsernameField()}</div>
-          <div>{this.renderPasswordField()}</div>
-          <button className="login-button" type="submit">
-            Login
-          </button>
-          {showErrMsg && <p className="error-paragraph">{errorMsg}</p>}
+          <div>
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+              alt="website logo"
+              className="login-image"
+            />
+          </div>
+          <hr className="horizontal" />
+          <div>
+            <div>{this.renderUsernameField()}</div>
+            <div>{this.renderPasswordField()}</div>
+            <button className="login-button" type="submit">
+              Login
+            </button>
+            {showErrMsg && <p className="error-paragraph">{errorMsg}</p>}
+          </div>
         </form>
       </div>
     )

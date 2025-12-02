@@ -13,12 +13,12 @@
 
 .search-input {
   padding: 7px;
-  background-color: transparent;
-  color: white;
+  background-color: #121212;
+  color: #f4f4f4;
   font-family: 'Roboto';
   width: 300px;
   height: 38px;
-  border-width: 1px;
+  border: 1px solid #f4f4f4;
   margin-left: 25px;
 }
 
@@ -26,7 +26,7 @@
   padding: 7px;
   background-color: transparent;
   color: white;
-  border-width: 1px;
+  border: 1px solid #f4f4f4;
 }
 .search-input-card {
   display: flex;
@@ -37,6 +37,7 @@
 @media screen and (min-width: 768px) {
   .sm-search-input {
     display: none;
+    align-items: center;
   }
 }
 
@@ -62,6 +63,8 @@
   padding-top: 20px;
 }
 .loader-container {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,9 +92,17 @@
 }
 
 .employment-type-para {
-  margin-left: 45px;
+  font-size: 20px;
+  margin-left: 25px;
   margin-bottom: 15px;
 }
+
+@media screen and (max-width: 768px) {
+  .employment-type-para {
+    margin-left: 30px;
+  }
+}
+
 .employment-card-container {
   display: flex;
   flex-direction: column;
